@@ -17,6 +17,7 @@ npm install react-native-cli @react-native-community/cli
 - Install CocoaPods. it is a dependency management system available for iOS
     ```sh
     $ sudo gem install cocoapods
+    $ brew install cocoapods (for Apple Silicon)
     ```
 #### Android
 - Install Java Development Kit
@@ -48,6 +49,7 @@ Next, select the "SDK Tools" tab and check the box next to "Show Package Details
 ## How to run 
 ``` sh
 npm install 
+cd ios && pod install && cd ..
 npm run ios
 npm run android
 ```
