@@ -2,23 +2,27 @@
 
 ## Setting up the development environment
 
-### BASICS
+### BASICS for MacOS setup
 ``` sh
 brew install node
 brew install watchman
 npm install react-native-cli @react-native-community/cli
-
 ```
 
 ### MACOS
 #### IOS
 - Install Xcode by going to the Mac app Store.
 - Install Command Line Tools: Open Xcode, then choose "Preferences..." from the Xcode menu. Go to the Locations panel and install the tools by selecting the most recent version in the Command Line Tools dropdown.
-- Install CocoaPods. it is a dependency management system available for iOS
+- Install CocoaPods. it is a dependency management system available for iOS. On most platforms, the following works:
     ```sh
     $ sudo gem install cocoapods
     $ brew install cocoapods (for Apple Silicon)
     ```
+    However for Apple Silicon, run the following instead:
+    ```sh
+    $ brew install cocoapods
+    ```
+
 #### Android
 - Install Java Development Kit
     ``` sh
